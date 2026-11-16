@@ -1,0 +1,8 @@
+node_modules/
+.next/
+.next-production/
+test-results/
+playwright-report/
+*.tsbuildinfo
+*.md
+!README.md
