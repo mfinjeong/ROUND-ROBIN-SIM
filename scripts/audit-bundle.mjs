@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { gzipSync } from "node:zlib";
 import path from "node:path";
 
-const root = ".next-production";
+const root = ".next";
 const manifest = JSON.parse(readFileSync(path.join(root, "app-build-manifest.json"), "utf8"));
 const rows = [];
 for (const [route, files] of Object.entries(manifest.pages)) {
